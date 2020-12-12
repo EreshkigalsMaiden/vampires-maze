@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="S9xZTehA)y*k$v:SNk)a">mySprite</variable><variable type="KIND_SpriteKind" id="nXCBn8DRl.5K%rtSwx+d">Player</variable><variable type="KIND_SpriteKind" id="^lAWHi;g=Lm=Ym||1VlV">Projectile</variable><variable type="KIND_SpriteKind" id="hR4,HMF$+UiH_44S%yPg">Food</variable><variable type="KIND_SpriteKind" id="Vd`i?B;60WVK5~.|59.2">Enemy</variable></variables><block type="pxt-on-start" id="(-LzIEYk;.nD`l=Mz**:" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="z%?^^9`JXgQyBQ/dDQdF"><field name="VAR" id="S9xZTehA)y*k$v:SNk)a">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="3ccsgXaBUbbBViovIByV"><value name="img"><shadow type="screen_image_picker" id=",8-@9h_![.%/_^%%$oj%"><field name="img">img`
+. f f f . . . . . . . . f f f . 
+f f c . . . . . . . f c b b c . 
+f c c . . . . . . f c b b c . . 
+c f . . . . . . . f b c c c . . 
+c f f . . . . . f f b b c c . . 
+f f f c c . c c f b c b b c . . 
+f f f c c c c c f b c c b c . . 
+. f c 3 c c 3 b c b c c c . . . 
+. c b 3 b c 3 b b c c c c . . . 
+c c b b b b b b b b c c . . . . 
+c b 1 b b b 1 b b b b f c . . . 
+f b b b b b b b b b b f c c . . 
+f b c b b b c b b b b f . . . . 
+. f 1 f f f 1 b b b c f . . . . 
+. . f b b b b b b c f . . . . . 
+. . . f f f f f f f . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="i:Dkq)FQ?X,WFaK-Kl)("><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="*~so4bQ22MF-X%i*wvG2"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="PHK#rT!;rPUYB[Q4VHB;"><field name="VAR" id="S9xZTehA)y*k$v:SNk)a">mySprite</field></block></value><value name="vx"><shadow type="math_number" id="J,t|7NP34p0VYg(@iFld"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="A9(1=ums-q:#FuS7X$v:"><field name="NUM">100</field></shadow></value><next><block type="tilemap_editor" id="P.xxr+jn{kg0Olk!gJ1m"><field name="tilemap">tiles.createTilemap(hex`10001000040707070707070707070707070707070416021602150202150202020215021904160202020215120a070e07070e0701080505111616020309150202020217030a070713020215030402030215050506041602020212020304020302020216030a07071302031503041503150a100e0104020202150302030402030f0415160304150707070707071302140e1302150304020215021616020215020202150203080505110202150202160202020202030918180416150a0c070c070c02070c01050511041602091502020202150202030a10130806020b02020204020203150d091616020215040f021504020203020308050505050508050e05040202030e06`, img`
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 . 2 . . . . . . . . . . . . 
+2 2 . . . . . 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 . 2 2 . . . . . . 2 
+2 2 2 2 . . . 2 2 . 2 . . 2 2 2 
+2 2 . . . 2 . 2 2 . 2 . . . 2 2 
+2 2 2 2 . 2 . 2 2 . 2 . 2 2 2 2 
+2 . . . . 2 . 2 2 . 2 . 2 . 2 2 
+2 . 2 2 2 2 2 2 2 . 2 2 2 . . 2 
+2 . . . . 2 2 . . . . . . . . 2 
+2 2 2 2 . . . . . 2 . . . . . 2 
+2 . . 2 2 . 2 2 2 2 2 2 . 2 2 2 
+2 2 2 2 2 . 2 . . . . . . . . 2 
+2 2 2 2 2 . 2 . . . 2 . . 2 . 2 
+2 2 2 . . . 2 . . . 2 . . 2 . 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+`, [myTiles.transparency16,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.floorDark0,sprites.dungeon.purpleOuterEast0,sprites.dungeon.purpleOuterWest1,sprites.dungeon.purpleOuterSouth1,sprites.dungeon.purpleOuterSouthWest,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.purpleOuterSouthEast,sprites.dungeon.purpleOuterWest0,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleOuterWest2,sprites.dungeon.purpleOuterNorth2,sprites.dungeon.purpleOuterEast2,sprites.dungeon.purpleOuterSouth2,sprites.dungeon.collectibleInsignia,sprites.dungeon.purpleOuterNorth0,sprites.dungeon.purpleInnerNorthEast,sprites.dungeon.purpleInnerNorthWest,sprites.dungeon.purpleInnerSouthEast,sprites.dungeon.purpleInnerSouthWest,sprites.dungeon.floorDark1,sprites.dungeon.floorDark3,sprites.dungeon.doorClosedEast,sprites.dungeon.darkGroundNorthEast1,sprites.dungeon.stairLarge], TileScale.Sixteen)</field><next><block type="mapplaceonrandomtile" id="GWYvB|Trp:(]i9X)r0O="><value name="sprite"><block type="variables_get" id="9tgEX^/{mK(xa[e8wkl+"><field name="VAR" id="S9xZTehA)y*k$v:SNk)a">mySprite</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="jD`B9wOX}#7CipPm)!ho"><field name="tile">sprites.dungeon.collectibleInsignia</field></shadow></value><next><block type="camerafollow" id="]CPiotKXxqD0Z#|M!/b|"><value name="sprite"><block type="variables_get" id="67^H[8M7t31k_iP.-n]5"><field name="VAR" id="S9xZTehA)y*k$v:SNk)a">mySprite</field></block></value></block></next></block></next></block></next></block></next></block></statement></block><block type="spriteshittile" id="f]$2C5lf@t_;rh%cP!7O" x="10" y="370"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="jNu`p=@q3x~zhNn1}X9o"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="pz=@}a?1=,L`Lk|L]AJ!"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="h)uHf@5L}*8*[wwGq0cn"><field name="tile">sprites.dungeon.stairLarge</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="6X~I8T@IrZ{^4q9^;Pl~"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="gameOver" id="=xrW/]s~-dB^Tv/}}`Ve"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose" id="(A)S4efZ.z39N{hlE?^6"><field name="win">true</field></shadow></value><next><block type="gamecountdown" id="6P(LiG^-e_}k1VMr@e6S"><value name="duration"><shadow type="math_number" id="UR^K%N~x4=/_*kqUSg({"><field name="NUM">10</field></shadow></value></block></next></block></statement></block></xml>
